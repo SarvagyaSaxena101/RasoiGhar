@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RasoiGhar"
         tools:targetApi="31">
+        <activity android:name=".SignUPActivity"/>
+        <activity android:name=".MainPageActivity"/>
+        <activity android:name=".SigninActivity"/>
+        <activity android:name=".CalorieCounter"/>
+        <activity android:name=".CultureExploration"/>
+        <activity android:name=".EventPlanner"/>
+        <activity android:name=".FoodDetection"/>
+        <activity android:name=".FoodFromFridge"/>
+        <activity android:name=".MealPlannerActivity"/>
+        <activity android:name=".RecipeTutorials"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

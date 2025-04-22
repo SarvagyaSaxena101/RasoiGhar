@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/meal_planner_page"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/result_scroll"
+        android:layout_width="374dp"
+        android:layout_height="240dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="src_over"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/result_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="" />
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/Scrollview"
+        android:layout_width="351dp"
+        android:layout_height="400dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        android:outlineAmbientShadowColor="#009688"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="#431B1B"
+        android:scrollIndicators="bottom"
+        android:translationY="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:outlineAmbientShadowColor="#009688">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Height(in cm)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Weight(in kg)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Plan for how many days"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Preference" />
+
+            <CheckBox
+                android:id="@+id/veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian" />
+
+            <CheckBox
+                android:id="@+id/nonveg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-Vegetarian" />
+
+
+            <CheckBox
+                android:id="@+id/glfree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gluten-Free" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender: " />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/DietType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diet Type: " />
+
+            <RadioGroup
+                android:id="@+id/dietTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/maintainance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maintenance" />
+
+                <RadioButton
+                    android:id="@+id/highProtien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High Protien" />
+
+                <RadioButton
+                    android:id="@+id/bulk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bulk" />
+
+                <RadioButton
+                    android:id="@+id/cut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cut" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Allergies (ex: Peanuts, Curd)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/healthIssues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Health Issues(ex: High blood pressure)"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/activitylevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity Level" />
+
+            <RadioGroup
+                android:id="@+id/activityLevelRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low" />
+
+                <RadioButton
+                    android:id="@+id/moderate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moderate" />
+
+                <RadioButton
+                    android:id="@+id/high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/mealFreq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Meals per dy(ex: 3)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/Plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E48D50"
+                android:text="Let's Plan" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

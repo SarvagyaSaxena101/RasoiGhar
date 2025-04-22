@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
         val btn = findViewById<ImageButton>(R.id.getting_started)
         btn.setOnClickListener {
-            Intent(this,)
+            Intent(this, SignUPActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 }

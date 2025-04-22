@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/blank_frame"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNumber6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Number of People(ex: 12)"
+                android:inputType="number"
+                android:textColorHint="#FBFAFA" />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cuisine(ex: Chinese, Thai)"
+                android:inputType="text"
+                android:textColorHint="#FBFAFA" />
+
+            <TextView
+                android:id="@+id/Food_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Preference" />
+
+            <CheckBox
+                android:id="@+id/Event_veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/Event_non_veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-Vegetarian"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/Event_vegan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegan"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/Event_gluten_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gluten-Free"
+                android:textColor="#FBFAFA" />
+
+            <TextView
+                android:id="@+id/Meal_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal Type" />
+
+            <CheckBox
+                android:id="@+id/breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/brunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FCF5FD"
+                android:text="Brunch"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/eve_snacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Evening Snacks"
+                android:textColor="#FBFAFA" />
+
+            <CheckBox
+                android:id="@+id/dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:textColor="#FBFAFA" />
+
+            <Button
+                android:id="@+id/Plan"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E48D50"
+                android:text="Plan Event" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
