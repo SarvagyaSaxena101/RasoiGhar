@@ -8,7 +8,7 @@
 
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollevent"
         android:layout_width="409dp"
         android:layout_height="420dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,6 +131,7 @@
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="248dp"
+        android:id="@+id/scrolle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
